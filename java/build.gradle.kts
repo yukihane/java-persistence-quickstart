@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("io.freefair.lombok") version "6.4.1"
 }
 
 repositories {
@@ -16,12 +17,16 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    // Use JUnit Jupiter for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
+val hibernateVersion: String by project
+val h2databaseVersion: String by project
+val junitVersion: String by project
 
-    // This dependency is used by the application.
-    implementation("com.google.guava:guava:30.1.1-jre")
+dependencies {
+    implementation("org.hibernate:hibernate-core:$hibernateVersion")
+    implementation("com.h2database:h2:$h2databaseVersion")
+
+    // Use JUnit Jupiter for testing.
+    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
 }
 
 application {
