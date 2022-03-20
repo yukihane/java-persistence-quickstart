@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "hello-jpa-java"
-include("app")
