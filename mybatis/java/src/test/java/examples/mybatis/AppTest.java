@@ -25,9 +25,15 @@ public class AppTest {
         try (final SqlSession session = sqlSessionFactory.openSession()) {
             final PersonMapper mapper = session.getMapper(PersonMapper.class);
             mapper.createTable();
-            final Person p = new Person(10L);
+            final Person p = new Person(1L, "yuki", 20);
             mapper.insert(p);
-            final Person p1 = mapper.find(10L);
+            final Person p1 = mapper.find(1L);
+            final Person p2 = mapper.findByName("yuki");
+            final Person p3 = mapper.findByName("yuki");
+
+            log.info("{}", p1.equals(p2));
+            log.info("{}", p1 == p2);
+            log.info("{}", p3 == p2);
         }
     }
 }
