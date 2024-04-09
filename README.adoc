@@ -1,5 +1,5 @@
-= JPA Quickstart
+= Java Persistence Quickstart
 
-JPAの機能をサクッと試すためのスタータープロジェクトです。
+JPAやMyBatisなど、JavaのDBアクセスライブラリーの機能をサクッと試すためのスタータープロジェクトです。
 
 初期コードとして含めていますが、 `test` 側にサンプルコードを実装してテストとして実行します。
