@@ -24,13 +24,13 @@
         <h2database.version>2.1.210</h2database.version>
         <mapstruct.version>1.5.0.Beta2</mapstruct.version>
         <lombok.version>1.18.22</lombok.version>
-        <doma.version>2.58.0</doma.version>
+        <doma.version>2.12.1</doma.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.seasar.doma</groupId>
-            <artifactId>doma-core</artifactId>
+            <artifactId>doma</artifactId>
             <version>${doma.version}</version>
         </dependency>
         <dependency>
@@ -87,11 +87,6 @@
                                 <groupId>org.projectlombok</groupId>
                                 <artifactId>lombok</artifactId>
                                 <version>${lombok.version}</version>
-                            </path>
-                            <path>
-                                <groupId>org.seasar.doma</groupId>
-                                <artifactId>doma-processor</artifactId>
-                                <version>${doma.version}</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>
