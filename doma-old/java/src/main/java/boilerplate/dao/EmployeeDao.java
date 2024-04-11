@@ -18,6 +18,9 @@ public interface EmployeeDao {
     List<Employee> selectAll();
 
     @Select
+    List<Employee> selectInIds(List<Integer> ids);
+
+    @Select
     Employee selectById(Integer id);
 
     @Insert
