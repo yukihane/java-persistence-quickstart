@@ -1,13 +1,13 @@
 package examples.jpa;
 
 import examples.jpa.entity.Person;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import lombok.AccessLevel;
 import lombok.Getter;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import java.util.List;
 
 import static org.hibernate.testing.transaction.TransactionUtil.doInHibernate;

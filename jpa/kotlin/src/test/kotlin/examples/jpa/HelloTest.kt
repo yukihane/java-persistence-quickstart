@@ -1,11 +1,11 @@
 package examples.jpa
 
 import examples.jpa.entity.Person
+import jakarta.persistence.Persistence
 import org.hibernate.SessionFactory
 import org.hibernate.testing.transaction.TransactionUtil.doInHibernate
 import org.hibernate.testing.transaction.TransactionUtil.doInJPA
 import org.junit.jupiter.api.Test
-import javax.persistence.Persistence
 
 
 class HelloTest {
